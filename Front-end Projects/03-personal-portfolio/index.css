@@ -1,0 +1,259 @@
+/* index styling */
+*{
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: burlywood;
+}
+body{
+  padding-bottom: 5rem;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border-bottom: 1px solid black; */
+  align-items: center;
+  padding-bottom: 0.5rem;
+  height: 40px;
+}
+.left-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+  gap: 10px;
+  cursor: pointer;
+}
+.logo{
+  width: 30%;
+  border-radius: 1rem;
+}
+.logo:hover{
+  cursor: pointer;
+  width: 35%;
+}
+.right-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  margin-right: 50px;
+}
+.right-section button{
+  border: none;
+  border-right: 1px solid black;
+  background-color: burlywood;
+  
+}
+.right-section a{
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+
+.main-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid black;
+}
+.main-display h1{
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.main-display h5{
+  margin-top: 10px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  border: 1px solid black;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid black;
+}
+.projects h2{
+  padding-left: 1.7rem;
+}
+.projects p{
+  border-bottom: 1px solid black;
+  padding-left: 1.7rem;
+}
+.projects p:nth-last-child(1){
+  border: none
+}
+.work{
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+}
+.xperience{
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.xperience h2,
+.xperience p,
+.xperience a{
+  padding-left: 1.6rem;
+}
+.opensource h2,
+.opensource p,
+.opensource a{
+  padding-left: 1.6rem;
+}
+.Education{
+  padding-left: 2rem;
+}
+.review{
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+.review h2{
+  text-align: center;
+}
+.comment{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  /* gap: 4rem; */
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+.comment div{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+}
+footer{
+  text-align: center;
+}
+
+/* contact styling */
+.grid-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.grid-container h2{
+  font-size: 25px;
+  margin-top: 4rem;
+}
+form label{
+  display: block;
+  font-size: 15px;
+  margin-top: 1.5rem;
+  margin-bottom: .4rem;
+}
+form input,
+form .message{
+  width: 35vw;
+  border: none;
+  background-color: white;
+  padding: .8rem;
+  font-size: 13px;
+  border-radius: 10px;
+  color: gray;
+}
+.submit-bttn{
+  display: block;
+  width: 35vw;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding: .8rem;
+}
+
+/* index & contact page mini screen styling */
+@media (max-width: 650px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    height: 100px;
+    margin-top: 50px;
+  }
+  .left-section{
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .right-section{
+    margin-right: 0;
+  }
+  .right-section button{
+    border: none
+  }
+  .logo{
+    width: 60%;
+    border-radius: 1rem;
+  }
+  .logo:hover{
+    cursor: pointer;
+    width: 90%;
+  }
+  .grid{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* border: none; */
+  }
+  .projects{
+    border-right: none;
+    padding-bottom:  .5rem;
+  }
+  .projects h2{
+    border-bottom: 1px solid black;
+    padding-bottom: .5rem;
+  }
+  .projects p{
+    padding-bottom: 1rem;
+    margin-top: 0;
+  }
+  .projects p:nth-last-child(1){
+    border-bottom: 1px solid black;
+  }
+  .work{
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 3rem;
+  }
+  .xperience{
+    padding-bottom: 3rem;
+  }
+  .work{
+    text-align: left;
+  }
+  .work h2{
+    text-align: center;
+  }
+  .Education{
+    text-align: left;
+  }
+  .comment{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .comment div{
+    width: 80%;
+  }
+
+  /* contact page mini screen styling */
+
+  form input,
+  form .message{
+    width: 50vw;
+  }
+}

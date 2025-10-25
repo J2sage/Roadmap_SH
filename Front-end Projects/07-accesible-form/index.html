@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accesible Form using HTML & CSS">
+  <meta name="author" content="Sage">
+  <title>Accesible Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <form action="" method="get">
+    <label for="Name">Full Name</label>
+    <input type="text" name="name" class="name" placeholder="What should we call you?" aria-required="true">
+    <p></p>
+
+    <label for="Email" aria-describedby="Email">Email</label>
+    <input type="email" name="email" class="email" placeholder="demo@email.com" aria-required="true">
+    <p></p>
+
+    <label for="Password">Enter Password</label>
+    <input type="password" class="password" placeholder="Password" aria-required="true">
+    <p></p>
+
+    <label for="Password confirmation">Confirm Password</label>
+    <input type="password" name="password" class="password1" placeholder="Password" required aria-required="true">
+    <p class="password-warning">Passwords must match</p>
+
+    <button>Update Profile</button>
+
+    <div class="progress">
+      <progress value="65" max="100">65%</progress>
+      <p class="percent">65%</p>
+    </div>
+
+    <div class="index">
+      <p class="one">Create Account</p>
+      <p class="one">Update Roadmap Progess</p>
+      <p class="one">Setup Public Profile</p>
+      <p class="two">Complete your first project</p>
+      <p class="two">Invite your Friends</p>
+    </div>
+  </form>
+</body>
+</html>

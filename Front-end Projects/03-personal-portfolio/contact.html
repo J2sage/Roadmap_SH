@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Contact">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Resume, Web Development, Frontend Developer">
+  <meta name="author" content="Leo Sage">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Sage  -- Frontend Dev">
+  <meta property="og:description" content="Contact">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  
+  <header class="navigation">
+    <nav class="left-section">
+      <img src="../img/profile3.jpg" class="logo" alt="website logo">
+      <p class="website-name">Sage Web</p>
+    </nav>
+
+    <nav class="right-section">
+      <button><a href="#">Home</a></button>
+      <button><a href="#">Projects</a></button>
+      <button><a href="#">Articles</a></button>
+      <button><a href="#">Contact</a></button>
+    </nav>
+    
+  </header>
+
+  <main class="grid-container">
+
+    <h2>Contact me:</h2>
+    <form action="submit_form.php" method="post">
+
+      <label for="name">Name:</label>
+      <input type="text" class="name" name="name" placeholder="Name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" class="email" name="email" placeholder="Email" required><br>
+
+      <label for="message">Suggestion Box:</label>
+      <textarea name="message" id="message" class="message" rows="5" placeholder="Type your message here" required></textarea>
+
+      <button class="submit-bttn">Submit</button>
+    </form>
+
+  
+    
+  </main>
+
+  <footer> &copy; All rights reserved 2025</footer>
+
+</body>
+</html>
