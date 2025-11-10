@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Fraunces;
+  background-color: rgb(255, 245, 233);
+}
+.item1{grid-area: item1;}
+.item2{grid-area: item2;}
+.item3{grid-area: item3;}
+.item4{grid-area: item4;}
+.item5{grid-area: item5;}
+.container{
+  width: 90%;
+  max-width: 550px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: 
+  "item1 item1 item2 item2"
+  "item3 item4 item4 item4"
+  "item5 item5 item5 item5";
+  gap: 20px;
+}
+.speech-bubble{
+  background-color: black;
+  color: silver;
+  padding: 13px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 5px black;
+}
+.profile{
+  margin-left: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.profile-picture{
+  width: 40px;
+  border-radius: 30px;
+}
+.testimonial-2{
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 7px;
+  background-color: silver;
+  box-shadow: 3px 3px 5px black;
+}
+.profile2{
+  margin: 5px;
+}
+.bigPicture{
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px black;
+  border: 3px dashed silver;
+}
+.testimonial-3{
+  background-color: black;
+  color: silver;
+  padding: 11px;
+  border-radius: 7px;
+  height: 86%;
+  box-shadow: 3px 3px 5px black;
+}
+.five-stars{
+  width: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.name{
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+.rep{
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.speech-bubble3 p{
+  font-size: 11px;
+  margin-top: 15px;
+}
+.testimonial-4{
+  border: 1px solid black;
+  padding: 10px;
+  background-color: silver;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 5px black;
+}
+.speech-bubble4{
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+}
+.images{
+  max-width: 30%;
+  margin: 10px auto;
+}
+.profile-picture1{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.profile-picture2,
+.profile-picture3{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 30px;
+  opacity: 0.6;
+}
+.end{
+  margin: auto;
+  max-width: 20%;
+}

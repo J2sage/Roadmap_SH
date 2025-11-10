@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  background-color: rgba(0, 0, 0, 0.952);
+  color: rgb(230, 230, 230);
+  width: 350px;
+  height: 600px;
+  margin: 10px auto;
+  border-radius: 15px;
+  padding: 25px 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+}
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.description{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+.vertical-line{
+  width: 0;
+  border: 1px solid rgb(230, 230, 230);
+  position: absolute;
+  top: 17%;
+  bottom: 10%;
+  left: 50%;
+}
+.day-one,
+.day-two,
+.day-three,
+.day-four,
+.day-five,
+.day-six,
+.day-seven{
+  font-size: 10px;
+  color: rgba(230, 230, 230, 0.761)
+}
+.day-one{
+  position: absolute;
+  top: 18%;
+  left: 25%;
+}
+.first-task{
+  position: absolute;
+  top: 21%;
+  left: 15%;
+  text-align: right;
+}
+.dot1{
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgb(230, 230, 230);
+  position: absolute;
+  top: 20%;
+  left: 49.5%;
+}
+.day-two{
+  position: absolute;
+  bottom: 68%;
+  right: 28%;
+  text-align: right;
+ }
+.second-task{
+  position: absolute;
+  bottom: 61%;
+  right: 20%;
+  text-align: left;
+  font-size: 11px;
+}
+.dot2{
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgb(230, 230, 230);
+  position: absolute;
+  top: 32%;
+  left: 49.5%;
+}
+.day-three{
+  position: absolute;
+  bottom: 55%;
+  left: 28%;
+  text-align: right;
+ }
+.third-task{
+  position: absolute;
+  bottom: 50%;
+  left: 26%;
+  text-align: right;
+  font-size: 11px;
+}
+.dot3{
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgb(230, 230, 230);
+  position: absolute;
+  bottom: 53%;
+  left: 49.5%;
+}
+.day-four{
+  position: absolute;
+  bottom: 46%;
+  right: 28%;
+  text-align: right;
+ }
+.fourth-task{
+  position: absolute;
+  bottom: 39%;
+  right: 20%;
+  text-align: left;
+  font-size: 11px;
+}
+.dot4{
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgb(230, 230, 230);
+  position: absolute;
+  bottom: 44%;
+  left: 49.5%;
+}
+.day-five{
+  position: absolute;
+  bottom: 35%;
+  left: 28%;
+  text-align: right;
+ }
+.fifth-task{
+  position: absolute;
+  bottom: 32%;
+  left: 16%;
+  text-align: right;
+  font-size: 11px;
+}
+.dot5{
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgb(230, 230, 230);
+  position: absolute;
+  bottom: 34%;
+  left: 49.5%;
+}
+.day-six{
+  position: absolute;
+  bottom: 28%;
+  right: 28%;
+  text-align: right;
+ }
+.sixth-task{
+  position: absolute;
+  bottom: 25%;
+  right: 26%;
+  text-align: right;
+  font-size: 11px;
+}
+.dot6{
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgb(230, 230, 230);
+  position: absolute;
+  bottom: 27%;
+  left: 49.5%;
+}
+.day-seven{
+  position: absolute;
+  bottom: 20%;
+  left: 28%;
+  text-align: right;
+ }
+.seventh-task{
+  position: absolute;
+  bottom: 15%;
+  left: 16%;
+  text-align: right;
+  font-size: 11px;
+}
+.dot7{
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgb(230, 230, 230);
+  position: absolute;
+  bottom: 18%;
+  left: 49.5%;
+}
+button{
+  position: absolute;
+  bottom: 5%;
+  left: 32%;
+  right: 32%;
+  white-space: nowrap;
+  padding: 5px 10px;
+  background-color: rgb(170, 80, 255);
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+}
