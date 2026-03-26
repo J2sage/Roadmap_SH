@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Calculate Your Exact Age</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <h1>
+                <span class="icon">📅</span>
+                Age Calculator
+            </h1>
+            <p class="subtitle">Calculate your exact age in years, months, and days</p>
+            
+            <div class="input-group">
+                <label for="birthdate">Select Your Birth Date:</label>
+                <input type="date" id="birthdate" class="date-input">
+                <button id="calculateBtn" class="calculate-btn">Calculate Age</button>
+            </div>
+            
+            <div class="result-card" id="resultCard" style="display: none;">
+                <h2>Your Age</h2>
+                <div class="age-display">
+                    <div class="age-box">
+                        <span class="age-number" id="years">0</span>
+                        <span class="age-label">Years</span>
+                    </div>
+                    <div class="age-box">
+                        <span class="age-number" id="months">0</span>
+                        <span class="age-label">Months</span>
+                    </div>
+                    <div class="age-box">
+                        <span class="age-number" id="days">0</span>
+                        <span class="age-label">Days</span>
+                    </div>
+                </div>
+                
+                <div class="detailed-info">
+                    <div class="info-item">
+                        <span class="info-label">Total Days:</span>
+                        <span class="info-value" id="totalDays">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Total Weeks:</span>
+                        <span class="info-value" id="totalWeeks">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Total Months:</span>
+                        <span class="info-value" id="totalMonths">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Total Hours:</span>
+                        <span class="info-value" id="totalHours">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Total Minutes:</span>
+                        <span class="info-value" id="totalMinutes">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Next Birthday:</span>
+                        <span class="info-value" id="nextBirthday">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="error-message" id="errorMessage"></div>
+            
+            <div class="fun-facts">
+                <h3>🎉 Fun Facts</h3>
+                <p id="funFact">Click calculate to see interesting facts about your age!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

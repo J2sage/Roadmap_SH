@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restricted Textarea</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:wght@100..900&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="container" class="container">
+    <h1 id="page" class="page">Welcome to my Page</h1>
+    <div class="textarea-box">
+      <p>Write your message</p>
+
+      <textarea name="message" id="message" class="message" cols="70" rows="6" placeholder="Start typing....." maxlength="250">
+
+      </textarea>
+      
+      <div id="text-count" class="text-count">
+        <span id="min" class="min">0</span> / 250
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
