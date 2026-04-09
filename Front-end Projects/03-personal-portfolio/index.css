@@ -1,116 +1,137 @@
-/* index styling */
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: burlywood;
 }
 body{
-  padding-bottom: 5rem;
+  /* padding: 10px; */
+  border: 1px solid black;
+  margin: 5px;
 }
-header{
+.nav{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  /* border-bottom: 1px solid black; */
-  align-items: center;
-  padding-bottom: 0.5rem;
-  height: 40px;
+  padding: 15px 20px;
 }
-.left-section{
+.left{
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  margin-left: 50px;
   gap: 10px;
+  width: 60%;
   cursor: pointer;
+  transition: opacity 0.3s;
 }
-.logo{
-  width: 30%;
-  border-radius: 1rem;
+.profile-pic{
+  width: 50px;
+  border-radius: 10px;
 }
-.logo:hover{
-  cursor: pointer;
-  width: 35%;
+.left p{
+  font-size: 1.5em;
 }
-.right-section{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 30px;
-  margin-right: 50px;
-}
-.right-section button{
-  border: none;
-  border-right: 1px solid black;
-  background-color: burlywood;
-  
-}
-.right-section a{
-  text-decoration: none;
-  font-size: 12px;
-  color: black;
+.left:hover{
+  opacity: 0.6;
 }
 
-.main-display{
+.right{
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  margin-top: 80px;
-  padding-bottom: 80px;
+  gap: 25px;
+  width: 35%;
+}
+.right button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.4em;
+  border-right: 1px solid black;
+  padding: 0 7px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.right button:hover{
+  opacity: 0.6;
+}
+
+.main-page{
+  margin-top: 5em;
+  text-align: center;
   border-bottom: 1px solid black;
+  padding-bottom: 8em;
 }
-.main-display h1{
-  font-size: 25px;
-  margin-bottom: 0;
+.main-page h1{
+  margin-bottom: .5em;
 }
-.main-display h5{
-  margin-top: 10px;
-}
-.grid{
+.grid-box{
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  border: 1px solid black;
 }
-.projects{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-right: 1px solid black;
-}
-.projects h2{
-  padding-left: 1.7rem;
-}
-.projects p{
+.grid-box{
   border-bottom: 1px solid black;
-  padding-left: 1.7rem;
 }
-.projects p:nth-last-child(1){
-  border: none
+.middle-box,
+.right-box{
+  border-left: 1px solid black;
 }
-.work{
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid black;
-}
-.xperience{
+.left-box p{
   border-bottom: 1px solid black;
-  padding-bottom: 10px;
+  padding: 10px 25px;
 }
-.xperience h2,
-.xperience p,
-.xperience a{
-  padding-left: 1.6rem;
+.left-box p:first-of-type{
+  border-bottom: none;
+  font-size: 14px;
+  font-weight: 600;
 }
-.opensource h2,
-.opensource p,
-.opensource a{
-  padding-left: 1.6rem;
+.left-box p:last-of-type{
+  border-bottom: none;
 }
-.Education{
-  padding-left: 2rem;
+.top{
+  border-bottom: 1px solid black;
+  padding: 15px 25px;
 }
+.top p:first-of-type{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.top p{
+  margin-bottom: 7px;
+}
+.bottom{
+  padding: 15px 25px;
+}
+.bottom p:first-of-type{
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.bottom p:last-of-type{
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.right-box{
+  padding: 15px 25px;
+  padding-bottom: 35px;
+}
+.education p:first-of-type{
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.education p:last-of-type{
+  width: 70%;
+  margin-bottom: 25px;
+}
+.courses p:first-of-type{
+  margin-bottom: 15px;
+  margin-top: 35px;
+}
+.courses li{
+  list-style-position: inside;
+  list-style-type: square;
+}
+
 .review{
   margin-top: 2.5rem;
   margin-bottom: 4rem;
@@ -134,126 +155,40 @@ footer{
   text-align: center;
 }
 
-/* contact styling */
-.grid-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.grid-container h2{
-  font-size: 25px;
-  margin-top: 4rem;
-}
-form label{
-  display: block;
-  font-size: 15px;
-  margin-top: 1.5rem;
-  margin-bottom: .4rem;
-}
-form input,
-form .message{
-  width: 35vw;
-  border: none;
-  background-color: white;
-  padding: .8rem;
-  font-size: 13px;
-  border-radius: 10px;
-  color: gray;
-}
-.submit-bttn{
-  display: block;
-  width: 35vw;
-  border: none;
-  background-color: white;
-  border-radius: 10px;
-  margin: 2rem auto;
-  padding: .8rem;
-}
-
-/* index & contact page mini screen styling */
-@media (max-width: 650px) {
-  header{
+@media (max-width:600px) {
+  .left{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
     justify-content: center;
     align-items: center;
-    padding-bottom: 0.5rem;
-    height: 100px;
-    margin-top: 50px;
+    gap: 10px;
+    width: 35%;
   }
-  .left-section{
+
+  .nav{
+    padding: 15px 5px;
     flex-direction: column;
-    margin-left: 0;
+    align-items: center;
+    gap: 15px;
   }
-  .right-section{
-    margin-right: 0;
-  }
-  .right-section button{
-    border: none
-  }
-  .logo{
-    width: 60%;
-    border-radius: 1rem;
-  }
-  .logo:hover{
-    cursor: pointer;
-    width: 90%;
-  }
-  .grid{
+  .right{
     display: flex;
-    flex-direction: column;
-    text-align: center;
     justify-content: center;
-    /* border: none; */
+    align-items: center;
   }
-  .projects{
-    border-right: none;
-    padding-bottom:  .5rem;
+
+  .grid-box{
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  .projects h2{
+
+  .left-box,
+  .middle-box,
+  .right-box{
     border-bottom: 1px solid black;
-    padding-bottom: .5rem;
-  }
-  .projects p{
-    padding-bottom: 1rem;
-    margin-top: 0;
-  }
-  .projects p:nth-last-child(1){
-    border-bottom: 1px solid black;
-  }
-  .work{
-    border-right: none;
-    border-bottom: 1px solid black;
-    padding-bottom: 3rem;
-  }
-  .xperience{
-    padding-bottom: 3rem;
-  }
-  .work{
-    text-align: left;
-  }
-  .work h2{
-    text-align: center;
-  }
-  .Education{
-    text-align: left;
   }
   .comment{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-  }
-  .comment div{
-    width: 80%;
-  }
-
-  /* contact page mini screen styling */
-
-  form input,
-  form .message{
-    width: 50vw;
+    grid-template-columns: 200px;
+    row-gap: 15px;
   }
 }

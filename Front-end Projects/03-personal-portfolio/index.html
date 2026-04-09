@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic HTML Website</title>
+  <title>Practice</title>
   <link rel="stylesheet" href="index.css">
   <!-- SEO Meta Tags -->
   <meta name="description" content="Basic HTML Website of a Frontend Dev">
@@ -15,83 +15,72 @@
   <meta property="og:type" content="website">
 </head>
 <body>
-  
-  <header class="navigation">
-    <nav class="left-section">
-      <img src="../img/profile3.jpg" class="logo" alt="website logo">
-      <p class="website-name">Sage Web</p>
-    </nav>
-
-    <nav class="right-section">
-      <button><a href="#">Home</a></button>
-      <button><a href="#">Projects</a></button>
-      <button><a href="#">Articles</a></button>
-      <button><a href="#">Contact</a></button>
-    </nav>
-    
+  <header class="nav">
+    <div class="left">
+      <div class="img-container">
+        <img src="../img/profile3.jpg" class="profile-pic" alt="company-logo">
+      </div>
+      <p>Sage Company</p>
+    </div>
+    <div class="right">
+      <button>Home</button>
+      <button>Project</button>
+      <button>Articles</button>
+      <button>Contact</button>
+    </div>
   </header>
-
-  <main class="container">
-
-    <section class="main-display">
-      <h1>Frontend Developer</h1>
-      <h5>html with only proper layout, no styling</h5>
-    </section>
-
-    <section class="grid">
-
-      <section class="projects">
-
-        <h2>Projects</h2>
-        <p>HTML Only Portfolio</p>
-        <p>Calculator</p>
-        <p>Quiz App</p>
-        <p>Countdown Timer</p>
-        <p>Product Upcoming Page</p>
-  
-      </section>
-  
-      <section class="work">
-  
-        <div class="xperience">
-          <h2>Work Experience</h2>
-          <p>roadmap.sh</p>
-          <p>Solved all the frontend projects</p>
-          <a href="#">Visit my Profile</a>
-        </div>
-        <hr>
-        
-        <div class="opensource">
-          <h2>OpenSource Work</h2>
-          <p>Contributed to 50 opensurce projects. Made my own projects with 200 GitHub Stars</p>
-          <a href="#">Visit my GitHUb Profile</a>
-        </div>
-  
-      </section>
-  
-      <section class="Education">
-        <h2>Education</h2>
-        <p>Graduated with 3.76 out of 4 CGPA. Wn Acme Hackhathon. Organized 30 sessions.</p>
-  
+  <main class="main-page">
+    <h1>Sage Leo</h1>
+    <h2>A Frontend Developer</h3>
+    <h4>html only with proper layout, no styling</h4>
+  </main>
+  <section class="grid-box">
+    <div class="left-box">
+      <p>Projects</p>
+      <p>HTML Only Portfolio</p>
+      <p>Calculator</p>
+      <p>Quiz App</p>
+      <p>Countdown Timer</p>
+      <p>Product Upcoming Page</p>
+    </div>
+    <div class="middle-box">
+      <div class="top">
+        <p>Work Experience</p>
+        <p>roadmap.sh</p>
+        <p>Solved all the frontend projects</p>
+        <a href="#">Visit my profile</a>
+      </div>
+      <div class="bottom">
+        <p>Opensource work</p>
+        <p>
+          Contributed to 50 opensource <br> projects. Made my own projects with <br> 200 GitHub Stars
+        </p>
+        <a href="#" class="link">Visit my GitHub Profile</a>
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="education">
+        <p>Education</p>
+        <p>
+          Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions
+        </p>
+      </div>
+      <div class="courses">
         <p>Courses I took:</p>
         <ul>
           <li>Object Oriented Programming</li>
-          <li>Data Structure and Algorithms</uli>
-          <li> Web Engineering</li>
-          <li>Aritficail Intelligence</li>
+          <li>Data Structure and Algorithms</li>
+          <li>Web Engineering</li>
+          <li>Artificial Intelligence</li>
           <li>Human Computer Interaction</li>
           <li>Computer Graphics</li>
-          <li>Database Management Systems</li>
-          <li>Distributed Database Systems</li>
+          <li>Database Management System</li>
+          <li>Distributed Database System</li>
           <li>Discreet Mathematics</li>
         </ul>
-        
-      </section>
-
-    </section>
-    
-
-  </main>
+      </div>
+    </div>
+  </section>
 
   <aside class="review">
     <h2>Review from my Teachers</h2>
@@ -117,6 +106,7 @@
   </aside>
 
   <footer> &copy; All right reserved 2025</footer>
-
+  
+  <script src="script/home.js"></script>
 </body>
 </html>

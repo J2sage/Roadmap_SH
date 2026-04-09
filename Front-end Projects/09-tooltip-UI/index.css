@@ -45,6 +45,7 @@ nav{
   pointer-events: none;
 }
 
+/* might be uirrelevant */
 .tooltiptext::after{
   content: '';
   position: absolute;
